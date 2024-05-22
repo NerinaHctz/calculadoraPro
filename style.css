@@ -1,0 +1,82 @@
+html{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 65%;
+}
+
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    display: flex;
+    border: 3px solid rgb(214, 174, 122);
+    width: 450px;
+    height: 680px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input{
+    width: 330px;
+    height: 200px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    font-weight: bold;
+    color:rgb(145, 189, 250) ; 
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;  
+}
+
+
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+}
+
+button{
+    margin: 10px;
+    padding: 13px 13px;
+    flex-direction: column;
+    border: 1px solid rgb(214, 174, 122);
+    background: white;
+    color: rgb(145, 189, 250);
+    border-radius: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.btn:active{
+    box-shadow: inset 3px 5px;
+    border: 1px solid rgb(145, 189, 250);
+    background: rgb(185, 211, 248);
+}
+
